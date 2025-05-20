@@ -1,0 +1,14 @@
+.innerPage_banner {
+    background-image: url("../Images/clients/testimonials.png");
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    height: 18.75rem;
+}
+.clients{
+    padding-block: 1rem;
+}
+.clients_slider {
+    padding-inline: 2rem;
+    padding-top: 0rem;
+}

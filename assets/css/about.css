@@ -1,0 +1,75 @@
+
+.innerPage_banner {
+    background-image: url("../Images/about/about-banner.png");
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    height: 18.75rem;
+}
+
+.aboutIntro {
+    margin-top: -1.75rem;
+}
+
+.aboutIntro p {
+    padding-top: 4.16rem;
+}
+
+.motoBox img {
+    height: 5.33rem;
+    width: 100%;
+    object-fit: contain;
+    object-position: left center;
+}
+
+.motoBox .siteHeading {
+    padding-block: 1rem 1.66rem;
+}
+
+.brands p {
+    color: var(--secondaryColor);
+    line-height: 1.166rem;
+}
+
+.brands img {
+    width: 5.75rem;
+    height: auto;
+}
+
+.b-col-1 {
+    width: 14.916rem;
+}
+
+.b-col-2 {
+    width: 11.33rem;
+}
+
+.b-col-3 {
+    width: 17.5rem;
+}
+
+@media( max-width: 991px ) {
+    .brands img {
+       height: 4.5rem;
+    }
+    .brands img {
+        width: 4.75rem;
+    }
+    .b-col-1,
+    .b-col-2, 
+    .b-col-3 {
+        width: 100%;
+    }
+}
+
+@media( max-width: 575px ) {
+    .aboutIntro p {
+        padding-top: 2rem;
+    }
+    .b-col-1,
+    .b-col-2, 
+    .b-col-3 {
+        max-width: 16rem;
+        margin: 0 auto;
+    }
+}

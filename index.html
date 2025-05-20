@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SLS Engineers</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+
+</head>
+  <body>
+
+    <header class="siteHeader" >
+      <div class="container-fluid">
+        <div class="d-flex align-items-center justify-content-between py-3">
+
+          <img class="siteLogo" src="./assets/Images/sls_logo.png" alt="sls" width="440" height="72">
+
+          <!-- Hamburger: hidden above 1200px -->
+          <button id="hamburgerMenu" class="hamburger d-xl-none" type="button" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Desktop menu: shown only above 1200px -->
+          <div class="menu d-xl-flex d-none specialText">
+            <a href="./" class="active" >HOME</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./products.html">PRODUCTS</a>
+            <a href="./contact.html">CLIENTS</a>
+            <a href="./contact.html">CONTACTS</a>
+          </div>
+
+          <!-- Mobile menu: collapses below 1200px -->
+          <div class="mobileMenu d-xl-none specialText" id="mobileMenu">
+            <div class="d-flex flex-column gap-3">
+              <a href="./" class="active" >HOME</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./products.html">PRODUCTS</a>
+            <a href="./contact.html">CLIENTS</a>
+            <a href="./contact.html">CONTACTS</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <section class="siteBanner">
+        <div class="container-fluid d-flex justify-content-center">
+            <h1 class="boldText text-center m-0">
+              SHAPING THE FUTURE WITH<br class="d-lg-inline d-none" >
+              ENGINEERING EXCELLENCE
+            </h1>
+        </div>
+    </section>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row justify-content-lg-evenly justify-content-sm-between justify-content-evenly gx-0 gy-md-0 gy-5">
+          <div class="col-md-auto col-sm-6 col-auto">
+            <div class="box">
+              <img src="./assets/Images/home/tooling.png" alt="tooling" width="80" height="80">
+              <h3 class="specialText">Tooling</h3>
+            </div>
+          </div>
+          <div class="col-md-auto col-sm-6 col-auto">
+            <div class="box">
+              <img src="./assets/Images/home/coolant.png" alt="coolant" width="80" height="80">
+              <h3 class="specialText">Coolant</h3>
+            </div>
+          </div>
+          <div class="col-md-auto col-sm-6 col-auto">
+            <div class="box">
+              <img src="./assets/Images/home/metrology.png" alt="metrology" width="80" height="80">
+              <h3 class="specialText">Metrology</h3>
+            </div>
+          </div>
+          <div class="col-md-auto col-sm-6 col-auto">
+            <div class="box">
+              <img src="./assets/Images/home/machine_tools.png" alt="machine tools" width="80" height="80">
+              <h3 class="specialText">Machine tools</h3>
+            </div>
+          </div>
+        </div>         
+      </div>
+    </section>
+
+    <section class="pt-3 pb-5">
+      <div class="container-fluid">
+        <p class="m-0" >
+          SLS Engineers offers a wide range of high-quality products that include Tooling, Coolant, Metrology, and Machine Tools that are trusted for durability and
+          precision in high-performance machining. Our offerings comprise the best brands in milling cutters, turning tools, and indexable inserts, essential for a
+          variety of industries, particularly automotive, aerospace, and general engineering. We also offer CNC Machine Servicing to keep your operations running
+          smoothly and efficiently.<br /><br />
+          Our goal is to deliver reliable solutions that support your manufacturing needs and help drive consistent performance.
+        </p>
+      </div>
+    </section>
+
+    <section class="overview" >
+      <div class="container-fluid">
+        <h2 class="specialText text-center siteHeading text-white" >
+          Company overview stats
+        </h2>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-auto">
+            <div class="count_box d-flex flex-column align-items-center">
+              <img src="assets/Images/home/count_years.png" alt="32 years" width="100" height="100" class="w-100 h-auto" />
+              <img src="assets/Images/down_arrow.svg" alt="down" width="30" height="30" class="down" />
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="count_divider" ></div>
+          </div>
+          <div class="col-auto">
+            <div class="count_box d-flex flex-column align-items-center">
+              <img src="assets/Images/home/count_awards.png" alt="6 awardss" width="100" height="100" class="w-100 h-auto" />
+              <img src="assets/Images/down_arrow.svg" alt="down" width="30" height="30" class="down" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="container-fluid">
+        <h2 class="specialText text-center siteHeading m-0">
+          OUR CLIENT
+        </h2>
+        <div class="clients_slider">
+          <div class="divider_splitColor"></div>
+          <div class="clients_slider_wrap">
+            <div class="splide" id="clients_splide" aria-label="Clients carousel">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="./assets/Images/home/clients_01.png" alt="client1" class="client_1" >
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./assets/Images/home/clients_02.png" alt="client2" class="client_2" >
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./assets/Images/home/clients_03.png" alt="client3" class="client_3" >
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./assets/Images/home/clients_04.png" alt="client4" class="client_4" >
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./assets/Images/home/clients_05.png" alt="client5" class="client_5" >
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./assets/Images/home/clients_06.png" alt="client6" class="client_6" >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="clients_slider_control csc_prev">
+              <img src="./assets/Images/arrow-left.png" alt="prev" width="30" height="30" />
+            </div>
+            <div class="clients_slider_control csc_next">
+              <img src="./assets/Images/arrow-right.png" alt="next" width="30" height="30" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="testimonials">
+      <div class="container-fluid">
+        <div class="testimonials_banner d-flex justify-content-center">
+          <img src="./assets/Images/home/testimonials.png" alt="testimonials" width="1410" height="300" />
+        </div>
+        <h2 class="siteHeading specialText text-center text-dark">
+          What our customers say
+        </h2>
+        <div class="row gx-lg-0 gx-md-4 gx-3 gy-md-5 gy-4 justify-content-between">
+          <div class="col-lg-auto col-sm-6 col-12">
+            <div class="reviewBox">
+              <h3 class="specialText m-0">
+                Lokesh machines limited
+              </h3>
+              <h4 class="specialText mb-2">
+                “Shows honesty in every step of business”
+              </h4>
+              <p class="specialText m-0">
+                Mullapudi Lokeshswara Rao Chairman
+              </p>
+              <img src="./assets/Images/stars.png" alt="stars" >
+            </div>
+          </div>
+          <div class="col-lg-auto col-sm-6 col-12">
+            <div class="reviewBox">
+              <h3 class="specialText m-0">
+                Lokesh machines limited
+              </h3>
+              <h4 class="specialText mb-2">
+                “Shows honesty in every step of business”
+              </h4>
+              <p class="specialText m-0">
+                Mullapudi Lokeshswara Rao Chairman
+              </p>
+              <img src="./assets/Images/stars.png" alt="stars" >
+            </div>
+          </div>
+          <div class="col-lg-auto col-sm-6 col-12">
+            <div class="reviewBox">
+              <h3 class="specialText m-0">
+                Lokesh machines limited
+              </h3>
+              <h4 class="specialText mb-2">
+                “Shows honesty in every step of business”
+              </h4>
+              <p class="specialText m-0">
+                Mullapudi Lokeshswara Rao Chairman
+              </p>
+              <img src="./assets/Images/stars.png" alt="stars" >
+            </div>
+          </div>
+          <div class="col-lg-auto col-sm-6 col-12">
+            <div class="reviewBox">
+              <h3 class="specialText m-0">
+                Lokesh machines limited
+              </h3>
+              <h4 class="specialText mb-2">
+                “Shows honesty in every step of business”
+              </h4>
+              <p class="specialText m-0">
+                Mullapudi Lokeshswara Rao Chairman
+              </p>
+              <img src="./assets/Images/stars.png" alt="stars" >
+            </div>
+          </div>
+          <div class="col-lg-auto col-sm-6 col-12">
+            <div class="reviewBox">
+              <h3 class="specialText m-0">
+                Lokesh machines limited
+              </h3>
+              <h4 class="specialText mb-2">
+                “Shows honesty in every step of business”
+              </h4>
+              <p class="specialText m-0">
+                Mullapudi Lokeshswara Rao Chairman
+              </p>
+              <img src="./assets/Images/stars.png" alt="stars" >
+            </div>
+          </div>
+          <div class="col-lg-auto col-sm-6 col-12">
+            <div class="reviewBox">
+              <h3 class="specialText m-0">
+                Lokesh machines limited
+              </h3>
+              <h4 class="specialText mb-2">
+                “Shows honesty in every step of business”
+              </h4>
+              <p class="specialText m-0">
+                Mullapudi Lokeshswara Rao Chairman
+              </p>
+              <img src="./assets/Images/stars.png" alt="stars" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container-fluid">
+        <h2 class="siteHeading specialText text-dark">
+          Get in touch
+        </h2>
+        <form method="post" id="contactForm" >
+          <div class="row gy-3 gx-0">
+            <div class="col-lg-auto">
+              <div class="fieldSet">
+                <div class="row gx-4 gy-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="contact_name" name="contact_name" placeholder="YOUR NAME" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" id="contact_mail" name="contact_mail" placeholder="EMAIL ADDRESS" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="type" class="form-control" id="contact_phone" name="contact_phone" placeholder="PHONE NO." required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="contact_subject" name="contact_subject" placeholder="SUBJECT" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <textarea class="form-control form-box" id="message" rows="6" placeholder="MESSAGE"></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary btn-custom mt-2">SUBMIT</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="siteFooter">
+      <div class="container-fluid">
+        <div class="row g-lg-0 gx-3 gy-md-0 gy-5 justify-content-between">
+          <div class="col-lg-auto col-md-4">
+            <div class="sf_column_1">
+              <img class="w-100 pe-lg-0 pe-4 footerLogo" src="./assets/Images/sls_logo.png" alt="sls" >
+              <div class="d-flex socialLinks" >
+                <a href="#" target="_blank" class="text-decoration-none d-inline-block" >
+                  <img src="./assets/Images/icon_2.png" alt="youtube" width="30" height="30" />
+                </a>
+                <a href="#" target="_blank" class="text-decoration-none d-inline-block" >
+                  <img src="./assets/Images/icon_3.png" alt="youtube" width="30" height="30" />
+                </a>
+                <a href="#" target="_blank" class="text-decoration-none d-inline-block" >
+                  <img src="./assets/Images/icon_1.png" alt="youtube" width="30" height="30" />
+                </a>
+                <a href="#" target="_blank" class="text-decoration-none d-inline-block" >
+                  <img src="./assets/Images/icon_4.png" alt="youtube" width="30" height="30" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-auto col-md-4">
+            <div class="sf_column_2 specialText">
+              <h5 class="m-0" >
+                Head office (Hyderabad)
+              </h5>
+              <div class="divider"></div>
+              <ul class="list-unstyled" >
+                <li>
+                  <img src="./assets/Images/call.png" alt="phone" />
+                  <a href="tel:919989999469" target="_blank" class="text-decoration-none" >
+                    +91 9989 999 469
+                  </a>
+                </li>
+                <li>
+                  <img src="./assets/Images/email.png" alt="mail" />
+                  <a href="mailto:Hyd.sales@slsengineers.com" target="_blank" class="text-decoration-none" >
+                    Hyd.sales@slsengineers.com
+                  </a>
+                </li>
+                <li>
+                  <img src="./assets/Images/location.png" alt="location" />
+                  <a href="" target="_blank" class="text-decoration-none" >
+                    D.No: 12-13-197, Flat No 206, 2nd Floor, Pavani Anasuya Towers, Tarnaka, Secunderabad - 500017.
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-auto col-md-4">
+            <div class="sf_column_3 specialText">
+              <h5 class="m-0" >
+                Branch office (Bangalore)
+              </h5>
+              <div class="divider"></div>
+              <ul class="list-unstyled" >
+                <li>
+                  <img src="./assets/Images/call.png" alt="phone" />
+                  <a href="tel:919900900338" target="_blank" class="text-decoration-none" >
+                    +91 9900 900 338
+                  </a>
+                  &nbsp;&nbsp;|&nbsp;&nbsp;
+                  <a href="tel:919902707707" target="_blank" class="text-decoration-none" >
+                    +91 9902 707 707
+                  </a>
+                </li>
+                <li>
+                  <img src="./assets/Images/email.png" alt="mail" />
+                  <a href="mailto:bang.sales@slsengineers.com" target="_blank" class="text-decoration-none" >
+                    bang.sales@slsengineers.com
+                  </a>
+                </li>
+                <li>
+                  <img src="./assets/Images/location.png" alt="location" />
+                  <a href="" target="_blank" class="text-decoration-none" >
+                    Survey No. 291/1, Behind Muneshwara Temple, Opposite Canara Bank, Anekal Main Road, Attibele, Bengaluru - 562107. 
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="siteFooter_divider"></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/home.js"></script>
+
+  </body>
+</html>
